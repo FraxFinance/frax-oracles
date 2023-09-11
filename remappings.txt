@@ -1,0 +1,10 @@
+ds-test/=node_modules/ds-test/src/
+forge-std/=node_modules/forge-std/src/
+frax-std/=node_modules/frax-standard-solidity/src/
+script/=script/
+src/=src/
+test/=test/
+deploy/=deploy/
+interfaces/=src/interfaces/
+arbitrum/=node_modules/@arbitrum/
+rlp/=node_modules/solidity-rlp/contracts/

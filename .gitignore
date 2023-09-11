@@ -1,0 +1,26 @@
+# directories
+node_modules
+out
+broadcast
+deployments
+cache
+.vscode
+report
+
+# files
+*.env
+.DS_Store
+
+# docgen
+documentation/docgen
+!documentation/docgen/contracts
+
+# deployment info
+.deployment
+deployments/hardhat
+deployments/localhost
+
+# for other tools which use gitignore
+.git
+.idea
+lcov.info

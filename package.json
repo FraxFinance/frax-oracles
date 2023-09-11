@@ -1,0 +1,44 @@
+{
+  "name": "fraxlend-oracles",
+  "description": "Repository for Oracle code",
+  "version": "1.0.0",
+  "author": {
+    "name": "Drake Evans",
+    "url": "https://www.twitter.com/drakeevansv1"
+  },
+  "files": [
+    "*.sol"
+  ],
+  "scripts": {
+    "postinstall": "husky install",
+    "generate:constants": "npx ts-node -T \"script/generateConstants.ts\"",
+    "generate:interfaces": "npx ts-node -T \"script/generateInterfaces.ts\"",
+    "prepare": "husky install",
+    "format": "forge fmt src && prettier --config ./.prettierrc.json --write src && forge fmt test && prettier --config ./.prettierrc.json --write test"
+  },
+  "devDependencies": {
+    "@chainlink/contracts": "^0.4.0",
+    "@mean-finance/uniswap-v3-oracle": "^1.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^17.0.45",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "@uniswap/v3-core": "^1.0.1",
+    "decimal.js": "^10.4.3",
+    "fs-extra": "^10.0.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0",
+    "prettier-plugin-solidity": "^1.0.0-dev.21",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-bytes-utils": "^0.8.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@arbitrum/token-bridge-contracts": "github:OffchainLabs/token-bridge-contracts",
+    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity",
+    "solidity-rlp": "github:hamdiallam/Solidity-RLP"
+  }
+}
